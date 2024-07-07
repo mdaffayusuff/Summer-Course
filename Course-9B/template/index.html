@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course 9B Assigment</title>
+</head>
+<body style="margin: 100px;">
+    <header>
+        <h1>Waste Generation Data Visual</h1>
+    </header>
+    <div class="card" style="margin: 50px 0px;">
+        <h2>Annual Waste Generation in Each Province by Year</h2>
+        <div class="plot1">
+            <img src="{{ annual_path }}" alt="" width="800">
+        </div>
+    </div>
+    <div class="card" style="margin: 50px 0px;">
+        <h2>Number of Provinces in Each Waste Category</h2>
+        <div class="plot1">
+            <img src="{{ average_path }}" alt="" width="800">
+        </div>
+
+        <h2>Average total annual waste generation in each province</h2>
+        <div>
+            {{ tab1 | safe }}
+        </div>
+    </div>
+
+    <div class="card" style="margin: 50px 0px;">
+        <h2>The Province with the Most Waste Generation Each Year</h2>
+        <div>
+            {{ tab2 | safe }}
+        </div>
+    </div>
+
+    <div class="card" style="margin: 50px 0px;">
+        <h2>The Province with the Least Waste Generation Each Year</h2>
+        <div>
+            {{ tab3 | safe }}
+        </div>
+    </div>
+
+
+</body>
+</html>
